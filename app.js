@@ -51,3 +51,34 @@ mixedArray.forEach(Element => {
 
 //The length og the string element
 console.log("Banana is a", mixedArray[1].length, " chars long");
+
+mixedArray.push("apple");
+
+mixedArray.unshift(1000);
+mixedArray.pop();
+mixedArray.shift();
+mixedArray.splice(1,1)
+mixedArray.forEach(Element => {
+    console.log("Updated array: ",Element);
+});
+
+
+//Objects literals
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 25,
+    email: "John@gmail.com",
+    hobbies: ['music', 'sports'],
+
+
+    getYearOfBirth: function() {
+    return 2019 - this.age;
+    }
+}
+
+let val;
+val = person;
+val = person.firstName;
+val = person.lastName;
+console.log(val);
