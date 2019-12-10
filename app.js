@@ -81,4 +81,8 @@ let val;
 val = person;
 val = person.firstName;
 val = person.lastName;
+val = person['lastName'];
+vla = person.age;
+
 console.log(val);
+
